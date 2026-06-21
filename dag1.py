@@ -127,3 +127,47 @@ while i<2:
 
 for count, x in enumerate(favoritsaker, start=1):
     print(f'{count}.{x}')
+
+# functions
+def printfunktion():
+    print("detta är en funktion som printar")
+for x in range(2):   
+    printfunktion()
+
+def area(x, y):
+    return x*y
+rektangel_sida_a = input("Ge den en längd: ")
+rektangel_sida_b = input("Ge den en längd: ")
+rektangel_sida_a = int(rektangel_sida_a)
+rektangel_sida_b = int(rektangel_sida_b)
+print(area(rektangel_sida_a, rektangel_sida_b))
+
+def print_favoritgrejer(bawar):
+    for x in favoritsaker:
+        print(x)
+print_favoritgrejer(favoritsaker)
+
+def print_string(*arg):
+    print("first name", arg[1])
+    print("second name", arg[0])
+print_string("Osmani", "Sejfullah")
+
+#Uppgift5
+
+def halsa():
+    namn = input("vad heter du: ")
+    return namn
+def summa():
+    a = input("skriv ett nummer: ")
+    b = input("skriv ett nummer: ")
+    a = int(a)
+    b = int(b)
+    return a+b
+def printa_ut_allt():
+    print("hello", halsa(), "summan av dina tal är", summa())
+
+printa_ut_allt()
+
+
+
+    
