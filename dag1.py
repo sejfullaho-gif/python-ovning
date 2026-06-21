@@ -87,8 +87,43 @@ print(leksaker)
 #uppgift 3
 
 favoritsaker = ['godis', 'leksaker', 'bilar', 'basket', 'gaming']
-print(f" det finns totalt {len(favoritsaker)} i listan")
+print(f"Det finns totalt {len(favoritsaker)} element i listan")
 print(favoritsaker[0])
 print(favoritsaker[4])
 favoritsaker.append("popcorn")
-print(favoritsaker) 
+print(favoritsaker)
+
+#loops
+#1 for loops
+#printa allt
+frukter = ['äpple', 'päron', 'banan']
+for x in frukter:
+    print(x)
+#alla bokstäver i banana
+for x in "banana":
+    print(x) 
+#sluta på ett visst element
+for x in frukter:
+    if x == "banan":
+        break #continue omm du vill att den hoppar över.
+    print(x)
+# hur mycket en loop ska fortsätta
+for x in range(6):
+    print(x)
+#mellan olika siffror
+for x in range(2, 5):
+    print(x)
+# tredje parametern säger hur mycket den ska hoppa mellan varje
+for x in range(2, 10, 2):
+    print(x)
+# while loop
+i = 0
+while i<2:
+    print(i)
+    i+=1
+
+
+#uppgift 4
+
+for count, x in enumerate(favoritsaker, start=1):
+    print(f'{count}.{x}')
