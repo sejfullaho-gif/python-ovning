@@ -61,7 +61,7 @@ print(f"Hej {name}, nästa år fyller du {age} år !")
 number = input("Skriv in ett nummer: ")
 number = int(number)
 if number > 0 :
-    print("Siffran är possitiv")
+    print("Siffran är positiv")
 elif number < 0 :
     print("Siffran är negativ")
 else :
@@ -71,3 +71,24 @@ if number % 2 == 0 :
     print("Siffran är jämn")
 else :
     print("Siffran är udda")
+# listor in ptyhon
+leksaker = ["bil", "figur", "spade"]
+print(leksaker)
+print(leksaker[2])
+print(len(leksaker))
+leksaker.append("hej")
+print(leksaker)
+ålder = [1, 2 ,3, 4]
+leksaker.append(ålder)
+print(leksaker)
+leksaker.remove("bil")
+print(leksaker)
+
+#uppgift 3
+
+favoritsaker = ['godis', 'leksaker', 'bilar', 'basket', 'gaming']
+print(f" det finns totalt {len(favoritsaker)} i listan")
+print(favoritsaker[0])
+print(favoritsaker[4])
+favoritsaker.append("popcorn")
+print(favoritsaker) 
